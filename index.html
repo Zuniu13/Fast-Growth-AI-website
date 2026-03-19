@@ -58,6 +58,10 @@
             z-index: 1;
         }
         
+        nav {
+            z-index: 100 !important;
+        }
+        
         /* Animated gradient background */
         .gradient-bg {
             background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 50%, #ffffff 100%);
@@ -156,6 +160,260 @@
         /* Smooth scroll */
         html {
             scroll-behavior: smooth;
+        }
+        
+        /* Mobile optimizations */
+        @media (max-width: 768px) {
+            /* Reduce particle density on mobile for performance */
+            #particle-canvas {
+                opacity: 0.6;
+            }
+            
+            /* Hero section mobile adjustments */
+            .min-h-screen.flex.items-center {
+                padding-top: 100px !important;
+                padding-bottom: 40px !important;
+                min-height: 100vh !important;
+            }
+            
+            h1 {
+                font-size: 48px !important;
+                line-height: 1.1 !important;
+                margin-bottom: 16px !important;
+            }
+            
+            h2 {
+                font-size: 28px !important;
+                line-height: 1.3 !important;
+                margin-bottom: 16px !important;
+            }
+            
+            /* Smaller text on mobile */
+            p {
+                font-size: 16px !important;
+                line-height: 1.5 !important;
+                margin-bottom: 16px !important;
+            }
+            
+            .text-lg {
+                font-size: 16px !important;
+                line-height: 1.5 !important;
+            }
+            
+            /* Reduce padding on sections */
+            section {
+                padding: 60px 24px !important;
+            }
+            
+            /* Make credential cards smaller */
+            .glass-card {
+                padding: 16px 24px !important;
+            }
+            
+            /* Stack credential cards vertically on mobile */
+            .flex.flex-col.sm\:flex-row {
+                flex-direction: column !important;
+                gap: 12px !important;
+            }
+            
+            .glass-card .text-4xl {
+                font-size: 28px !important;
+            }
+            
+            .glass-card .text-sm {
+                font-size: 12px !important;
+            }
+            
+            /* CTA button sizing */
+            .cta-button {
+                padding: 16px 32px !important;
+                font-size: 16px !important;
+            }
+            
+            /* Section headings */
+            .text-5xl, .text-6xl {
+                font-size: 32px !important;
+                line-height: 1.2 !important;
+            }
+            
+            .text-7xl {
+                font-size: 36px !important;
+            }
+            
+            /* Reduce spacing */
+            .py-20 {
+                padding-top: 48px !important;
+                padding-bottom: 48px !important;
+            }
+            
+            .py-32 {
+                padding-top: 64px !important;
+                padding-bottom: 64px !important;
+            }
+            
+            .mb-16 {
+                margin-bottom: 32px !important;
+            }
+            
+            .mb-20 {
+                margin-bottom: 48px !important;
+            }
+            
+            /* Reduce margin below credential cards */
+            .mb-16.fade-in {
+                margin-bottom: 24px !important;
+            }
+            
+            .mb-12 {
+                margin-bottom: 24px !important;
+            }
+            
+            /* Case study cards */
+            .glass-card.p-10 {
+                padding: 24px !important;
+            }
+            
+            /* Video cards */
+            .glass-card.p-6 {
+                padding: 16px !important;
+            }
+            
+            /* Process cards */
+            .glass-card.p-8 {
+                padding: 20px !important;
+            }
+            
+            /* About section card */
+            .glass-card.p-12 {
+                padding: 24px !important;
+            }
+            
+            .w-14.h-14 {
+                width: 48px !important;
+                height: 48px !important;
+            }
+            
+            .w-7.h-7 {
+                width: 24px !important;
+                height: 24px !important;
+            }
+            
+            /* About section - stack photo and bio */
+            .flex.flex-col.md\:flex-row {
+                flex-direction: column !important;
+            }
+            
+            /* Make all grids single column on mobile */
+            .grid.md\:grid-cols-3,
+            .grid.md\:grid-cols-2 {
+                grid-template-columns: 1fr !important;
+                gap: 16px !important;
+            }
+            
+            /* Reduce gaps in case study internal grids */
+            .gap-8 {
+                gap: 16px !important;
+            }
+            
+            .gap-12 {
+                gap: 24px !important;
+            }
+            
+            /* Final CTA section */
+            .px-12 {
+                padding-left: 32px !important;
+                padding-right: 32px !important;
+            }
+            
+            .py-6 {
+                padding-top: 16px !important;
+                padding-bottom: 16px !important;
+            }
+            
+            /* Adjust max-widths for mobile */
+            .max-w-7xl,
+            .max-w-5xl,
+            .max-w-4xl,
+            .max-w-3xl,
+            .max-w-2xl {
+                padding-left: 16px !important;
+                padding-right: 16px !important;
+            }
+            
+            .w-64.h-64 {
+                width: 180px !important;
+                height: 180px !important;
+            }
+            
+            .text-3xl {
+                font-size: 22px !important;
+                line-height: 1.3 !important;
+            }
+            
+            .text-2xl {
+                font-size: 18px !important;
+            }
+            
+            .text-xl {
+                font-size: 16px !important;
+            }
+            
+            /* Navigation mobile */
+            nav {
+                padding: 12px 16px !important;
+            }
+            
+            nav .w-10 {
+                width: 32px !important;
+                height: 32px !important;
+            }
+            
+            nav .text-xl {
+                font-size: 16px !important;
+            }
+            
+            nav .text-sm {
+                font-size: 11px !important;
+            }
+            
+            nav .flex.items-center.gap-6 {
+                gap: 12px !important;
+            }
+            
+            /* Gradient line under heading */
+            .h-2.w-32 {
+                width: 80px !important;
+                height: 6px !important;
+            }
+            
+            /* Metrics sizing */
+            .text-5xl.font-black {
+                font-size: 36px !important;
+            }
+            
+            /* Neon border cards metrics */
+            .neon-border .text-5xl {
+                font-size: 32px !important;
+            }
+            
+            .neon-border .text-3xl {
+                font-size: 24px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            /* Extra small screens */
+            h1 {
+                font-size: 42px !important;
+            }
+            
+            h2 {
+                font-size: 24px !important;
+            }
+            
+            .text-7xl, .text-6xl, .text-5xl {
+                font-size: 28px !important;
+            }
         }
     </style>
 </head>
@@ -682,9 +940,11 @@
 
     <script>
         // Three.js Particle Wave Animation - NOW FULL PAGE!
-        const SEPARATION = 80;  // Reduced from 100 for more density
-        const AMOUNTX = 80;     // Increased from 50
-        const AMOUNTY = 80;     // Increased from 50
+        // Adjust particle density based on screen size
+        const isMobile = window.innerWidth <= 768;
+        const SEPARATION = isMobile ? 100 : 80;  // Larger separation on mobile
+        const AMOUNTX = isMobile ? 40 : 80;      // Fewer particles on mobile
+        const AMOUNTY = isMobile ? 40 : 80;      // Fewer particles on mobile
         
         let container, camera, scene, renderer;
         let particles, particle, count = 0;
